@@ -21,7 +21,7 @@ let faqList = ref([
 ]);
 </script>
 <template>
-  <div class="space-y-4 max-w-3xl mx-auto px-2">
+  <div class="space-y-4 max-w-3xl mx-auto px-2 pb-10">
     <h2 class="text-2xl text-center font-bold text-zinc-800 md:text-4xl">
       Frequently asked questions
     </h2>
