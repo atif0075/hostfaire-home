@@ -155,7 +155,7 @@
                 <div>
                   <div>
                     <img
-                    v-motion-slide-visible-once-right
+                    v-motion-slide-right
                       src="../assets/svg/hero.svg"
                       class="relative ml-auto"
                       alt=""
