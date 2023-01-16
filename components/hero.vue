@@ -72,9 +72,7 @@
                         <div
                           class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                         >
-                          <span class="transition group-hover:text-zinc-700"
-                            >About</span
-                          >
+                          <span class="transition">About</span>
                         </div>
                       </a>
                     </li>
@@ -83,9 +81,7 @@
                         <div
                           class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                         >
-                          <span class="transition group-hover:text-zinc-700"
-                            >Download</span
-                          >
+                          <span class="transition">Download</span>
                         </div>
                       </a>
                     </li>
