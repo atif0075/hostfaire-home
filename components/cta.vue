@@ -1,13 +1,10 @@
 <script setup lang="ts"></script>
 <template>
   <section>
-    <XyzTransition
-      appear-visible
-      xyz="delay-2 fade small rotate-right"
-      class="py-16"
-    >
+    <div class="py-16">
       <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
         <div
+          v-motion-pop-visible-once
           class="lg:bg-gray-100 lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center"
         >
           <div class="md:5/12 lg:w-1/2">
@@ -81,7 +78,7 @@
           </div>
         </div>
       </div>
-    </XyzTransition>
+    </div>
   </section>
 </template>
 <style scoped></style>

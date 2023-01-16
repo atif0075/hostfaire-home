@@ -152,11 +152,16 @@
                   aria-hidden="true"
                   class="absolute inset-0 m-auto w-[30rem] h-[30rem] rounded-full bg-zinc-200"
                 ></div>
-                <img
-                  src="../assets/svg/hero.svg"
-                  class="relative ml-auto"
-                  alt=""
-                />
+                <div>
+                  <div>
+                    <img
+                      v-motion-fade
+                      src="../assets/svg/hero.svg"
+                      class="relative ml-auto"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

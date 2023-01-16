@@ -41,7 +41,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <main :class="$device.isMobileOrTablet ? 'hidden' : ''" class="cursor">
+  <main :class="isMobileOrTablet ? 'hidden' : ''" class="cursor">
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>

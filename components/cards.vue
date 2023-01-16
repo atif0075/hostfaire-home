@@ -45,6 +45,7 @@ let cards = ref([
         <div
           v-for="(item, index) in cards"
           :key="index"
+          v-motion-slide-visible-bottom
           class="group relative rounded-3xl space-y-6 overflow-hidden"
         >
           <img
@@ -58,7 +59,7 @@ let cards = ref([
             class="rounded-b-3xl absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0"
           >
             <div>
-              <h4 class="text-xl font-semibold  text-white">
+              <h4 class="text-xl font-semibold text-white">
                 {{ item.section }}
               </h4>
               <span class="block text-sm text-gray-500">HostFaire</span>

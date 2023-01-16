@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    css: ['~/assets/css/main.css'],
+    css: ['~/assets/css/main.css',],
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -9,8 +9,7 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/device',
+        '@vueuse/motion/nuxt'
     ],
-    build: {
-        transpile: ['@animxyz/core', '@animxyz/vue3', 'clsx'],
-    },
+
 })
