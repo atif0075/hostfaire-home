@@ -6,6 +6,8 @@
     <Cta />
     <Cards />
     <Comparison />
+    <Faq />
+    <Footer />
   </section>
 </template>
 <style scoped></style>
