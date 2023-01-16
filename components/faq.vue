@@ -19,17 +19,6 @@ let faqList = ref([
     open: false,
   },
 ]);
-let toggle = (index: number) => {
-  faqList.value.forEach((faq, i) => {
-    if (i === index) {
-      faq.open = !faq.open;
-      console.log(i, faq.open);
-    } else {
-      faq.open = false;
-      console.log(i, faq.open);
-    }
-  });
-};
 </script>
 <template>
   <div class="space-y-4 max-w-3xl mx-auto px-2">
@@ -41,14 +30,12 @@ let toggle = (index: number) => {
     <details
       v-for="(faq, index) in faqList"
       :key="index"
-      @click="toggle(index)"
       class="group rounded-lg bg-zinc-100 hover:bg-zinc-100 p-6 [&_summary::-webkit-details-marker]:hidden"
       :open="faq.open"
     >
       <summary class="flex items-center justify-between cursor-pointer">
         <h2 class="font-medium text-gray-900">
           {{ faq.question }}
-          {{ faq.open }}
         </h2>
 
         <span class="relative ml-1.5 h-5 w-5 flex-shrink-0">
