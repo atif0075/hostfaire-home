@@ -7,6 +7,9 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    modules: [
+        '@nuxtjs/device',
+    ],
     build: {
         transpile: ['@animxyz/core', '@animxyz/vue3', 'clsx'],
     },
