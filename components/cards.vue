@@ -31,12 +31,10 @@ let cards = ref([
   <div class="py-20">
     <div class="xl:container mx-auto px-6 md:px-12">
       <div class="mb-16 text-center">
-        <h2
-          class="mb-4 text-2xl font-bold text-gray-800 dark:text-white md:text-4xl"
-        >
+        <h2 class="mb-4 text-2xl font-bold text-gray-800 md:text-4xl">
           InApp Screenshots
         </h2>
-        <p class="text-gray-600 dark:text-gray-300">
+        <p class="text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore
           quia tempora dolor impedit. Possimus, sint ducimus ipsam?
         </p>
@@ -57,15 +55,15 @@ let cards = ref([
             height="805"
           />
           <div
-            class="rounded-b-3xl absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0"
+            class="rounded-b-3xl absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0"
           >
             <div>
-              <h4 class="text-xl font-semibold dark:text-gray-700 text-white">
+              <h4 class="text-xl font-semibold  text-white">
                 {{ item.section }}
               </h4>
               <span class="block text-sm text-gray-500">HostFaire</span>
             </div>
-            <p class="mt-8 text-gray-300 dark:text-gray-600">
+            <p class="mt-8 text-gray-300">
               {{ item.about }}
             </p>
           </div>

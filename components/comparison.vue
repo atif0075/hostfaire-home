@@ -51,17 +51,17 @@ let comparisonFeatures = [
 <template>
   <div class="xl:container m-auto px-6 py-20 md:px-12 lg:px-20 xl:px-0">
     <div class="m-auto text-center">
-      <h2 class="text-2xl font-bold text-zinc-800 dark:text-white md:text-4xl">
+      <h2 class="text-2xl font-bold text-zinc-800 md:text-4xl">
         A comparison of our app with others
       </h2>
     </div>
     <div class="m-auto mt-12">
       <div class="relative z-10">
         <div class="relative overflow-auto p-6">
-          <table class="w-full border-t border-zinc-100 dark:border-zinc-700">
+          <table class="w-full border-t border-zinc-100">
             <thead>
               <tr>
-                <td class="p-4 sm:sticky"></td>
+                <td class="p-4"></td>
                 <td
                   v-for="(item, index) in otherApps"
                   :key="index"
@@ -69,12 +69,10 @@ let comparisonFeatures = [
                 >
                   <img :src="item.logo" class="h-12 w-auto" />
                   <div class="space-y-4">
-                    <h4
-                      class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100"
-                    >
+                    <h4 class="text-2xl font-semibold text-zinc-800">
                       {{ item.name }}
                     </h4>
-                    <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                    <p class="text-sm text-zinc-600">
                       Delectus natus illum in, iste ut facilis ex sit culpa fuga
                       dolor atque? Quis.
                     </p>
@@ -86,7 +84,7 @@ let comparisonFeatures = [
             <tbody>
               <tr v-for="(item, index) in comparisonFeatures" :key="index">
                 <td
-                  class="left-0 border border-zinc-100 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 p-4 font-medium text-zinc-900 dark:text-zinc-200 sm:sticky"
+                  class="left-0 border border-zinc-100 bg-zinc-100 p-4 font-medium text-zinc-900"
                 >
                   <span class="block w-max"> {{ item.name }} </span>
                 </td>
@@ -94,7 +92,7 @@ let comparisonFeatures = [
                   v-for="(i, index) in item.features"
                   :key="index"
                   :class="i === '✕' ? 'text-red-500' : 'text-green-500'"
-                  class="border border-zinc-100 dark:border-zinc-700 p-4 text-center"
+                  class="border border-zinc-100 p-4 text-center"
                 >
                   {{ i }}
                 </td>

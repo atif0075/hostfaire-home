@@ -8,7 +8,7 @@
     >
       <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
         <div
-          class="lg:bg-gray-100 dark:lg:bg-darker lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center"
+          class="lg:bg-gray-100 lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center"
         >
           <div class="md:5/12 lg:w-1/2">
             <img
@@ -20,28 +20,22 @@
             />
           </div>
           <div class="md:7/12 lg:w-1/2">
-            <h2
-              class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
-            >
+            <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
               Find your dream home
             </h2>
-            <p class="my-8 text-gray-600 dark:text-gray-300">
+            <p class="my-8 text-gray-600">
               Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
               expedita at? Asperiores nemo possimus nesciunt dicta veniam
               aspernatur quam mollitia.
             </p>
-            <div
-              class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800"
-            >
+            <div class="divide-y space-y-4 divide-gray-100">
               <div class="mt-8 flex gap-4 md:items-center">
-                <div
-                  class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20"
-                >
+                <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400"
+                    class="w-6 h-6 m-auto text-indigo-500"
                   >
                     <path
                       fill-rule="evenodd"
@@ -51,25 +45,21 @@
                   </svg>
                 </div>
                 <div class="w-5/6">
-                  <h4
-                    class="font-semibold text-lg text-gray-700 dark:text-indigo-300"
-                  >
+                  <h4 class="font-semibold text-lg text-gray-700">
                     Chat Anytime
                   </h4>
-                  <p class="text-gray-500 dark:text-gray-400">
+                  <p class="text-gray-500">
                     Asperiores nemo possimus nesciunt quam mollitia.
                   </p>
                 </div>
               </div>
               <div class="pt-4 flex gap-4 md:items-center">
-                <div
-                  class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20"
-                >
+                <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
+                    class="w-6 h-6 m-auto text-teal-600"
                   >
                     <path
                       fill-rule="evenodd"
@@ -79,12 +69,10 @@
                   </svg>
                 </div>
                 <div class="w-5/6">
-                  <h4
-                    class="font-semibold text-lg text-gray-700 dark:text-teal-300"
-                  >
+                  <h4 class="font-semibold text-lg text-gray-700">
                     Real Time Location
                   </h4>
-                  <p class="text-gray-500 dark:text-gray-400">
+                  <p class="text-gray-500">
                     Asperiores nemo possimus nesciunt quam mollitia.
                   </p>
                 </div>

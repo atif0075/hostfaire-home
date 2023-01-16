@@ -23,7 +23,7 @@ let faqList = ref([
 <template>
   <div class="space-y-4 max-w-3xl mx-auto px-2">
     <h2
-      class="text-2xl text-center font-bold text-zinc-800 dark:text-white md:text-4xl"
+      class="text-2xl text-center font-bold text-zinc-800  md:text-4xl"
     >
       Frequently asked questions
     </h2>

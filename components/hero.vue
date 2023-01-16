@@ -1,6 +1,6 @@
 <template>
   <section>
-    <body class="bg-white dark:bg-zinc-900">
+    <body class="bg-white">
       <div class="relative w-full">
         <nav class="absolute w-full">
           <div class="container m-auto px-6 md:px-12 lg:px-7">
@@ -28,11 +28,11 @@
                   >
                     <div
                       id="line"
-                      class="m-auto h-0.5 w-6 rounded bg-sky-900 dark:bg-zinc-300 transition duration-300"
+                      class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"
                     ></div>
                     <div
                       id="line2"
-                      class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 dark:bg-zinc-300 transition duration-300"
+                      class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"
                     ></div>
                   </label>
                 </div>
@@ -45,7 +45,7 @@
               ></label>
 
               <div
-                class="flex z-50 flex-col md:flex-row justify-between items-center gap-y-4 p-6 bg-white dark:bg-zinc-800 md:w-8/12 md:gap-y-4 md:p-0 md:bg-transparent lg:w-7/12 fixed top-0 -left-full transition-all duration-500 peer-checked:left-0 max-w-sm h-full md:left-0 md:h-auto w-4/5 md:max-w-none md:relative lg:first-letter:top-0"
+                class="flex z-50 flex-col md:flex-row justify-between items-center gap-y-4 p-6 bg-white md:w-8/12 md:gap-y-4 md:p-0 md:bg-transparent lg:w-7/12 fixed top-0 -left-full transition-all duration-500 peer-checked:left-0 max-w-sm h-full md:left-0 md:h-auto w-4/5 md:max-w-none md:relative lg:first-letter:top-0"
               >
                 <div class="flex md:hidden w-full pb-5">
                   <a href="#" aria-label="logo">
@@ -61,7 +61,7 @@
                     <li>
                       <a href="#" class="block md:px-3">
                         <div
-                          class="relative text-zinc-800 dark:text-zinc-300 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left dark:before:bg-yelloe-500 before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800"
+                          class="relative text-zinc-800 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800"
                         >
                           <span>Home</span>
                         </div>
@@ -70,10 +70,9 @@
                     <li>
                       <a href="#" class="block md:px-3 group">
                         <div
-                          class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left dark:before:bg-yelloe-500 before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
+                          class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                         >
-                          <span
-                            class="transition group-hover:text-zinc-700 dark:text-zinc-300 dark:group-hover:text-zinc-300"
+                          <span class="transition group-hover:text-zinc-700"
                             >About</span
                           >
                         </div>
@@ -82,10 +81,9 @@
                     <li>
                       <a href="#" class="block md:px-3 group">
                         <div
-                          class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left dark:before:bg-yelloe-500 before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
+                          class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                         >
-                          <span
-                            class="transition group-hover:text-zinc-700 dark:text-zinc-300 dark:group-hover:text-zinc-300"
+                          <span class="transition group-hover:text-zinc-700"
                             >Download</span
                           >
                         </div>
@@ -100,7 +98,7 @@
                   <button
                     type="button"
                     title="Start buying"
-                    class="w-full py-3 px-6 text-center transition dark:bg-zinc-700 bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 md:w-max"
+                    class="w-full py-3 px-6 text-center transition bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 md:w-max"
                   >
                     <span class="block text-white font-semibold">
                       Explore
@@ -119,15 +117,13 @@
                   <span
                     class="block w-14 mb-2 border-b-2 border-zinc-600"
                   ></span>
-                  <span class="font-medium text-zinc-600 dark:text-zinc-400"
-                    >The new era</span
-                  >
+                  <span class="font-medium text-zinc-600">The new era</span>
                 </span>
-                <h1 class="text-4xl font-bold md:text-6xl dark:text-white">
+                <h1 class="text-4xl font-bold md:text-6xl">
                   The New <br />
                   Way To Rent
                 </h1>
-                <p class="text-xl text-zinc-700 dark:text-zinc-300">
+                <p class="text-xl text-zinc-700">
                   Booking Hotels,Rooms all over the Pakistan
                 </p>
 
@@ -135,7 +131,7 @@
                   <button
                     type="button"
                     title="Start buying"
-                    class="w-full py-3 px-6 text-center transition bg-zinc-900 dark:bg-zinc-700 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 sm:w-max"
+                    class="w-full py-3 px-6 text-center transition bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 sm:w-max"
                   >
                     <span class="block text-white font-semibold">
                       Explore
@@ -144,10 +140,10 @@
                   <button
                     type="button"
                     title="Start buying"
-                    class="group w-full py-3 px-6 text-center transition dark:active:bg-zinc-800 dark:focus:bg-zinc-900 active:bg-zinc-200 focus:bg-zinc-100 sm:w-max"
+                    class="group w-full py-3 px-6 text-center transition active:bg-zinc-200 focus:bg-zinc-100 sm:w-max"
                   >
                     <span
-                      class="block text-zinc-700 dark:text-white font-semibold group-focus:text-zinc-700 dark:group-focus:text-zinc-100"
+                      class="block text-zinc-700 font-semibold group-focus:text-zinc-700"
                     >
                       Our showcase
                     </span>
@@ -160,7 +156,11 @@
                   aria-hidden="true"
                   class="absolute inset-0 m-auto w-[30rem] h-[30rem] rounded-full bg-zinc-200"
                 ></div>
-                <img src="../assets/svg/hero.svg" class="relative ml-auto" alt="" />
+                <img
+                  src="../assets/svg/hero.svg"
+                  class="relative ml-auto"
+                  alt=""
+                />
               </div>
             </div>
           </div>
