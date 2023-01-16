@@ -22,9 +22,7 @@ let faqList = ref([
 </script>
 <template>
   <div class="space-y-4 max-w-3xl mx-auto px-2">
-    <h2
-      class="text-2xl text-center font-bold text-zinc-800  md:text-4xl"
-    >
+    <h2 class="text-2xl text-center font-bold text-zinc-800 md:text-4xl">
       Frequently asked questions
     </h2>
     <details
@@ -71,7 +69,9 @@ let faqList = ref([
         </span>
       </summary>
 
-      <p class="mt-4 leading-relaxed text-gray-700">{{ faq.answer }}}</p>
+      <p v-motion-fade-visible class="mt-4 leading-relaxed text-gray-700">
+        {{ faq.answer }}}
+      </p>
     </details>
   </div>
 </template>
