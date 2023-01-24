@@ -1,21 +1,21 @@
 <script setup lang="ts">
 let faqList = ref([
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
+    question: "How do I book accommodation on HostFaire?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!",
+      "Booking accommodation on HostFaire is easy. It has user-friendly mobile app that allow you to search for properties, read reviews, and make bookings.",
     open: true,
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
+    question: "How do I communicate with the host on HostFaire?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!",
+      "HostFaire has messaging systems in place to allow guests to communicate with the host or property. You can send a message to the host through the platform to ask any questions or to request additional information.",
     open: false,
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
+    question: "Is it safe to book accommodation on HostFaire?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!",
+      "HostFaire has measures in place to ensure the safety of their guests. It  provides reviews and ratings from previous guests, so travelers can make informed decisions about where to stay. Additionally, It’s system is secured and encrypted to ensure the protection of the personal information of the users.",
     open: false,
   },
 ]);
