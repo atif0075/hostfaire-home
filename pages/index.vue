@@ -5,7 +5,7 @@
     <Hero />
     <Cta />
     <Cards />
-    <Comparison />
+    <!-- <Comparison /> -->
     <Faq />
     <Footer />
   </section>
