@@ -1,26 +1,36 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
+// https://i.ibb.co/7Jbsqwm/Unknown-2.png
+// https://i.ibb.co/nfst34C/Unknown-3.png
+// https://i.ibb.co/m9bkxmd/Unknown-4.png
+// https://i.ibb.co/C2yXpLz/Unknown-5.png
+// https://i.ibb.co/rbwpkHb/Unknown-6.png
+// https://i.ibb.co/y5S9wCj/Unknown-7.png
+// https://i.ibb.co/16fD5nV/Unknown-8.png
+// https://i.ibb.co/pW7zfw0/Unknown-9.png
+// https://i.ibb.co/GT3W9vt/Unknown-10.png
+// https://i.ibb.co/fk6t76t/Unknown.png
 let cards = ref([
   {
     section: "Signup",
-    src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-    about: "Sign up for an account and start adding your places to the map.",
+    src: "https://i.ibb.co/fk6t76t/Unknown.png",
+    about: "Sign up for creating account and start adding your places to HostFaire.",
   },
   {
-    section: "Loading",
-    src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-    about: "A beautiful waiting screen while the map loads. ",
+    section: "Dashboard",
+    src: "https://i.ibb.co/7Jbsqwm/Unknown-2.png",
+    about: "A clean user interface to provide user a walm welcome and feeling.",
   },
   {
-    section: "Adding User",
-    src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-    about: "Add a user to your place. You can add multiple users to a place.",
+    section: "Ad - Detail",
+    src: "https://i.ibb.co/y5S9wCj/Unknown-7.png",
+    about: "Complete ad detail to see what the host is offering in their property listing.",
   },
   {
-    section: "Marking Place",
-    src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
+    section: "Chatting",
+    src: "https://i.ibb.co/nfst34C/Unknown-3.png",
     about:
-      "Mark your place on the map. You can also add a photo of your place.",
+      "Secured Encrypted chatting to ensure a safe environment which will give them a peace of mind.",
   },
 ]);
 </script>
