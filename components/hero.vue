@@ -95,12 +95,6 @@
           <div class="container m-auto px-6 py-40 md:px-12 lg:py-0 lg:px-7">
             <div class="flex items-center flex-wrap gap-12 lg:gap-0">
               <div class="lg:w-5/12 space-y-8">
-                <span class="flex space-x-2">
-                  <span
-                    class="block w-14 mb-2 border-b-2 border-zinc-600"
-                  ></span>
-                  <span class="font-medium text-zinc-600">The new era</span>
-                </span>
                 <h1 class="text-4xl font-bold md:text-6xl">
                   Your home, <br />
                   everywhere you go
