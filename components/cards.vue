@@ -25,7 +25,7 @@ let cards = ref([
 ]);
 </script>
 <template>
-  <div class="py-20">
+  <div id="inapp" class="py-20">
     <div class="xl:container mx-auto px-6 md:px-12">
       <div class="mb-16 text-center">
         <h2 class="mb-4 text-2xl font-bold text-gray-800 md:text-4xl">

@@ -16,6 +16,7 @@
     "tailwindcss": "^3.2.4"
   },
   "dependencies": {
-    "@vueuse/motion": "2.0.0-beta.25"
+    "@vueuse/motion": "2.0.0-beta.25",
+    "firebase": "^9.16.0"
   }
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <section>
-    <div class="py-16">
+    <div id="explore" class="py-16">
       <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
         <div
           v-motion-pop-visible-once

@@ -124,7 +124,8 @@
                 </p>
 
                 <div class="flex space-x-4">
-                  <button
+                  <a
+                    href="#explore"
                     type="button"
                     title="Start buying"
                     class="w-full py-3 px-6 text-center transition bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 sm:w-max"
@@ -132,8 +133,9 @@
                     <span class="block text-white font-semibold">
                       Explore
                     </span>
-                  </button>
-                  <button
+                  </a>
+                  <a
+                    href="#beta"
                     type="button"
                     title="Start buying"
                     class="group w-full py-3 px-6 text-center transition active:bg-zinc-200 focus:bg-zinc-100 sm:w-max"
@@ -141,9 +143,9 @@
                     <span
                       class="block text-zinc-700 font-semibold group-focus:text-zinc-700"
                     >
-                      Our showcase
+                      Join Beta List
                     </span>
-                  </button>
+                  </a>
                 </div>
               </div>
 
