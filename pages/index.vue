@@ -10,4 +10,8 @@
     <Footer />
   </section>
 </template>
-<style scoped></style>
+<style>
+* {
+  scroll-behavior: smooth;
+}
+</style>

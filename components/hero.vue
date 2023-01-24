@@ -68,38 +68,24 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="block md:px-3 group">
+                      <a href="#inapp" class="block md:px-3 group">
                         <div
                           class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                         >
-                          <span class="transition">About</span>
+                          <span class="transition">In App</span>
                         </div>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="block md:px-3 group">
+                      <a href="#faq" class="block md:px-3 group">
                         <div
                           class="relative text-zinc-600 before:absolute before:-inset-2 before:w-full before:h-0.5 before:origin-left before:mx-auto before:mt-auto before:rounded-full before:bg-zinc-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                         >
-                          <span class="transition">Download</span>
+                          <span class="transition">FAQ</span>
                         </div>
                       </a>
                     </li>
                   </ul>
-                </div>
-
-                <div
-                  class="w-full gap-y-4 md:w-max md:gap-y-0 md:gap-x-4 flex md:flex-row flex-col"
-                >
-                  <button
-                    type="button"
-                    title="Start buying"
-                    class="w-full py-3 px-6 text-center transition bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 md:w-max"
-                  >
-                    <span class="block text-white font-semibold">
-                      Explore
-                    </span>
-                  </button>
                 </div>
               </div>
             </div>
