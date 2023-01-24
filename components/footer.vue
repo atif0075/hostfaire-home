@@ -6,9 +6,8 @@
         <strong
           class="block text-center text-xl font-medium text-gray-900 sm:text-3xl"
         >
-          Join out beta list to get early accessx
+          Join out beta list to get early access
         </strong>
-
         <form class="mt-6">
           <div class="relative max-w-lg">
             <label class="sr-only" for="email"> Email </label>
