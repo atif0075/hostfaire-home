@@ -116,11 +116,11 @@
                   <span class="font-medium text-zinc-600">The new era</span>
                 </span>
                 <h1 class="text-4xl font-bold md:text-6xl">
-                  The New <br />
-                  Way To Rent
+                  Your home, <br />
+                  everywhere you go
                 </h1>
                 <p class="text-xl text-zinc-700">
-                  Booking Hotels,Rooms all over the Pakistan
+                  Need a time out? Find a stay nearby
                 </p>
 
                 <div class="flex space-x-4">
@@ -155,7 +155,7 @@
                 <div>
                   <div>
                     <img
-                    v-motion-slide-right
+                      v-motion-slide-right
                       src="../assets/svg/hero.svg"
                       class="relative ml-auto"
                       alt=""

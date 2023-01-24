@@ -21,9 +21,10 @@
               Find your dream home
             </h2>
             <p class="my-8 text-gray-600">
-              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam
-              aspernatur quam mollitia.
+              HostFaire empowers hotels and other properties by providing full
+              stack technology that increases earnings and eases operations.
+              Bringing affordable and trusted accommodation that guests can book
+              instantly.
             </p>
             <div class="divide-y space-y-4 divide-gray-100">
               <div class="mt-8 flex gap-4 md:items-center">
@@ -46,31 +47,9 @@
                     Chat Anytime
                   </h4>
                   <p class="text-gray-500">
-                    Asperiores nemo possimus nesciunt quam mollitia.
-                  </p>
-                </div>
-              </div>
-              <div class="pt-4 flex gap-4 md:items-center">
-                <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="w-6 h-6 m-auto text-teal-600"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div class="w-5/6">
-                  <h4 class="font-semibold text-lg text-gray-700">
-                    Real Time Location
-                  </h4>
-                  <p class="text-gray-500">
-                    Asperiores nemo possimus nesciunt quam mollitia.
+                    This feature allows for real-time communication with
+                    customer service and support, making the booking process
+                    smooth and hassle-free for travelers.
                   </p>
                 </div>
               </div>
