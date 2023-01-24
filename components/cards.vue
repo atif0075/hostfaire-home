@@ -4,26 +4,23 @@ let cards = ref([
   {
     section: "Signup",
     src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-    about:
-      "Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?",
+    about: "Sign up for an account and start adding your places to the map.",
   },
   {
     section: "Loading",
     src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-    about:
-      "Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?",
+    about: "A beautiful waiting screen while the map loads. ",
   },
   {
     section: "Adding User",
     src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
-    about:
-      "Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?",
+    about: "Add a user to your place. You can add multiple users to a place.",
   },
   {
     section: "Marking Place",
     src: "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
     about:
-      "Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?",
+      "Mark your place on the map. You can also add a photo of your place.",
   },
 ]);
 </script>
@@ -35,8 +32,8 @@ let cards = ref([
           InApp Screenshots
         </h2>
         <p class="text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore
-          quia tempora dolor impedit. Possimus, sint ducimus ipsam?
+          Some of the screenshots of the app in action. The app is still in
+          development.
         </p>
       </div>
       <div
@@ -64,7 +61,7 @@ let cards = ref([
               </h4>
               <span class="block text-sm text-gray-500">HostFaire</span>
             </div>
-            <p class="mt-8 text-gray-300">
+            <p class="mt-8 text-gray-300 line-clamp-2 group-hover:line-clamp-3">
               {{ item.about }}
             </p>
           </div>
