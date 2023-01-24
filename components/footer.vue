@@ -67,17 +67,13 @@ const submit = async () => {
         class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
       >
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+          <a href="#explore" class="mr-4 hover:underline md:mr-6">About</a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          <a href="#faq" class="mr-4 hover:underline md:mr-6">FAQ</a>
         </li>
-        <li>
-          <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-        </li>
-        <li>
-          <a href="#" class="hover:underline">Contact</a>
-        </li>
+      
+       
       </ul>
     </footer>
   </footer>
