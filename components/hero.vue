@@ -1,6 +1,20 @@
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+  // animate slide in
+  $gsap.from(".img", {
+    duration: 1,
+    opacity: 0,
+    x: 100,
+    ease: "power4.out",
+    stagger: 0.2,
+  });
+});
+</script>
 <template>
   <section>
-    <body class="bg-white">
+    <body class="bg-white h-screen">
       <div class="relative w-full">
         <nav class="absolute w-full">
           <div class="container m-auto px-6 md:px-12 lg:px-7">
@@ -108,22 +122,10 @@
                     href="#explore"
                     type="button"
                     title="Start buying"
-                    class="w-full py-3 px-6 text-center transition bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 sm:w-max"
+                    class="w-full py-3 px-6 text-center rounded-lg transition bg-zinc-900 hover:bg-zinc-800 active:bg-zinc-700 focus:bg-zinc-800 sm:w-max"
                   >
                     <span class="block text-white font-semibold">
                       Explore
-                    </span>
-                  </a>
-                  <a
-                    href="#beta"
-                    type="button"
-                    title="Start buying"
-                    class="group w-full py-3 px-6 text-center transition active:bg-zinc-200 focus:bg-zinc-100 sm:w-max"
-                  >
-                    <span
-                      class="block text-zinc-700 font-semibold group-focus:text-zinc-700"
-                    >
-                      Join Beta List
                     </span>
                   </a>
                 </div>
@@ -134,15 +136,12 @@
                   aria-hidden="true"
                   class="absolute inset-0 m-auto w-[30rem] h-[30rem] rounded-full bg-zinc-200"
                 ></div>
-                <div>
-                  <div>
-                    <img
-                      v-motion-slide-right
-                      src="../assets/svg/hero.svg"
-                      class="relative ml-auto"
-                      alt=""
-                    />
-                  </div>
+                <div class="img">
+                  <img
+                    src="../assets/svg/hero.svg"
+                    class="img relative ml-auto"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -152,14 +151,7 @@
     </body>
   </section>
 </template>
-<script setup lang="ts">
-let showVideo = ref(false);
-let btnText = ref("Watch Video");
-let toggleVideo = () => {
-  showVideo.value = !showVideo.value;
-  btnText.value = showVideo.value ? "Close Video" : "Watch Video";
-};
-</script>
+
 <style scoped>
 .btn-outline {
   @apply hover:text-white !important;

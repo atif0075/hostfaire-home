@@ -9,7 +9,16 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/device',
-        '@vueuse/motion/nuxt'
+        '@hypernym/nuxt-gsap',
     ],
+    gsap: {
+        // Module options
+        extraPlugins: {
+            scrollTo: true,
+            scrollTrigger: true,
+            observer: true,
+            text: true
+        },
+    },
 
 })

@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+const { $gsap } = useNuxtApp();
+const { $ScrollTrigger } = useNuxtApp();
 // https://i.ibb.co/7Jbsqwm/Unknown-2.png
 // https://i.ibb.co/nfst34C/Unknown-3.png
 // https://i.ibb.co/m9bkxmd/Unknown-4.png
@@ -10,11 +11,26 @@ import { ref, onMounted } from "vue";
 // https://i.ibb.co/pW7zfw0/Unknown-9.png
 // https://i.ibb.co/GT3W9vt/Unknown-10.png
 // https://i.ibb.co/fk6t76t/Unknown.png
+onMounted(() => {
+  // animate slide in when visible
+  $gsap.from("#cards", {
+    scrollTrigger: {
+      trigger: "#inapp",
+      start: "top 60%",
+    },
+    duration: 1,
+    opacity: 0,
+    y: 100,
+    ease: "power4.out",
+    stagger: 0.2,
+  });
+});
 let cards = ref([
   {
     section: "Signup",
     src: "https://i.ibb.co/fk6t76t/Unknown.png",
-    about: "Sign up for creating account and start adding your places to HostFaire.",
+    about:
+      "Sign up for creating account and start adding your places to HostFaire.",
   },
   {
     section: "Dashboard",
@@ -24,7 +40,8 @@ let cards = ref([
   {
     section: "Ad - Detail",
     src: "https://i.ibb.co/y5S9wCj/Unknown-7.png",
-    about: "Complete ad detail to see what the host is offering in their property listing.",
+    about:
+      "Complete ad detail to see what the host is offering in their property listing.",
   },
   {
     section: "Chatting",
@@ -42,8 +59,8 @@ let cards = ref([
           InApp Screenshots
         </h2>
         <p class="text-gray-600">
-          Some of the screenshots of the app in action. The app is still in
-          development.
+          Some of the screenshots of the app in action. This app is live and can
+          be used by anyone.
         </p>
       </div>
       <div
@@ -52,7 +69,7 @@ let cards = ref([
         <div
           v-for="(item, index) in cards"
           :key="index"
-          v-motion-slide-visible-bottom
+          id="cards"
           class="group relative rounded-3xl space-y-6 overflow-hidden"
         >
           <img

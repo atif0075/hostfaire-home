@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { $gsap } = useNuxtApp();
+const { $TextPlugin } = useNuxtApp();
 let faqList = ref([
   {
     question: "How do I book accommodation on HostFaire?",
@@ -19,60 +21,54 @@ let faqList = ref([
     open: false,
   },
 ]);
+onMounted(() => {
+  // animate slide in when visible
+  $gsap.from("#faqItems", {
+    scrollTrigger: {
+      trigger: "#faqItems",
+      start: "top 60%",
+    },
+    duration: 1,
+    opacity: 0,
+    y: 100,
+    ease: "power4.out",
+    stagger: 0.2,
+  });
+});
 </script>
 <template>
   <div id="faq" class="space-y-4 max-w-3xl mx-auto px-2 py-16">
     <h2 class="text-2xl text-center font-bold text-zinc-800 md:text-4xl">
       Frequently asked questions
     </h2>
-    <details
+    <div
       v-for="(faq, index) in faqList"
       :key="index"
-      class="group rounded-lg bg-zinc-100 hover:bg-zinc-100 p-6 [&_summary::-webkit-details-marker]:hidden"
-      :open="faq.open"
+      id="faqItems"
+      class="group rounded-lg bg-zinc-100 hover:bg-zinc-100 p-6"
+      @click="faq.open = !faq.open"
     >
-      <summary class="flex items-center justify-between cursor-pointer">
+      <div class="flex items-center justify-between cursor-pointer">
         <h2 class="font-medium text-gray-900">
           {{ faq.question }}
         </h2>
-
-        <span class="relative ml-1.5 h-5 w-5 flex-shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </span>
-      </summary>
-
-      <p v-motion-fade-visible class="mt-4 leading-relaxed text-gray-700">
-        {{ faq.answer }}}
-      </p>
-    </details>
+      </div>
+      <Transition>
+        <div v-if="faq.open" class="mt-4 leading-relaxed text-gray-700">
+          {{ faq.answer }}
+        </div>
+      </Transition>
+    </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

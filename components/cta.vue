@@ -1,10 +1,27 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { $gsap } = useNuxtApp();
+const { $ScrollTrigger } = useNuxtApp();
+onMounted(() => {
+  // animate pop in when visible
+  $gsap.from("#explore", {
+    scrollTrigger: {
+      trigger: "#cta",
+      start: "top 60%",
+    },
+    duration: 1,
+    opacity: 0,
+    y: 100,
+    ease: "power4.out",
+    stagger: 0.2,
+  });
+});
+</script>
 <template>
   <section>
     <div id="explore" class="py-16">
       <div class="xl:container m-auto px-6 text-gray-600 md:px-12 xl:px-16">
         <div
-          v-motion-pop-visible-once
+          id="cta"
           class="lg:bg-gray-100 lg:p-16 rounded-[4rem] space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0 lg:items-center"
         >
           <div class="md:5/12 lg:w-1/2">
