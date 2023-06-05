@@ -1,5 +1,26 @@
-<script setup></script>
+<script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
+const openVideo = ref(false);
+const target = ref(null);
+onClickOutside(target, (event: any) => {
+  openVideo.value = false;
+});
+</script>
 <template>
+  <div class="w-full relative">
+    <div
+      v-if="openVideo"
+      class="fixed left-0 top-0 z-30 w-full h-screen bg-black/10 flex flex-col justify-center items-center p-10"
+    >
+      <video
+        ref="target"
+        autoplay
+        src="../assets/demo.mp4"
+        class="w-full z-50 h-full rounded-xl shadow-lg"
+        controls
+      ></video>
+    </div>
+  </div>
   <div
     class="pt-32 md:py-12 relative flex justify-center items-center xl:container m-auto px-6 md:px-12"
   >
@@ -21,13 +42,12 @@
           app works.
         </p>
       </div>
-      <div
-        class="overflow-hidden mt-5 lg:mt-0 lg:hover:scale-110 transition-all duration-300 w-full lg:w-7/12 lg:-mr-16"
-      >
+      <div class="overflow-hidden mt-5 lg:mt-0 w-full lg:w-7/12 lg:-mr-16">
         <video
+          @click="openVideo = true"
           src="../assets/demo.mp4"
           class="w-full h-full rounded-xl shadow-lg"
-          controls
+          :controls="false"
         ></video>
       </div>
     </div>

@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/device',
         '@hypernym/nuxt-gsap',
+        '@vueuse/nuxt',
     ],
     gsap: {
         // Module options
