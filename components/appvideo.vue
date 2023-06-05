@@ -25,7 +25,7 @@
         class="overflow-hidden mt-5 lg:mt-0 lg:hover:scale-110 transition-all duration-300 w-full lg:w-7/12 lg:-mr-16"
       >
         <video
-          src="../assets/videos/demo.mp4"
+          src="../assets/demo.mp4"
           class="w-full h-full rounded-xl shadow-lg"
           controls
         ></video>
