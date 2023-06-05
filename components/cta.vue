@@ -3,7 +3,7 @@ const { $gsap } = useNuxtApp();
 const { $ScrollTrigger } = useNuxtApp();
 onMounted(() => {
   // animate pop in when visible
-  $gsap.from("#xx", {
+  $gsap.from("#explore", {
     scrollTrigger: {
       trigger: "#cta",
       start: "top 60%",

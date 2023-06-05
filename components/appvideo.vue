@@ -22,7 +22,7 @@
         </p>
       </div>
       <div
-        class="overflow-hidden hover:scale-110 transition-all duration-300 w-full lg:w-7/12 lg:-mr-16"
+        class="overflow-hidden mt-5 lg:mt-0 lg:hover:scale-110 transition-all duration-300 w-full lg:w-7/12 lg:-mr-16"
       >
         <video
           src="../assets/videos/demo.mp4"
