@@ -4,6 +4,7 @@
     <Cursor />
     <Hero />
     <Cta />
+    <Guide />
     <Cards />
     <!-- <Comparison /> -->
     <Faq />

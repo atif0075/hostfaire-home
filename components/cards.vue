@@ -1,16 +1,6 @@
 <script setup lang="ts">
 const { $gsap } = useNuxtApp();
 const { $ScrollTrigger } = useNuxtApp();
-// https://i.ibb.co/7Jbsqwm/Unknown-2.png
-// https://i.ibb.co/nfst34C/Unknown-3.png
-// https://i.ibb.co/m9bkxmd/Unknown-4.png
-// https://i.ibb.co/C2yXpLz/Unknown-5.png
-// https://i.ibb.co/rbwpkHb/Unknown-6.png
-// https://i.ibb.co/y5S9wCj/Unknown-7.png
-// https://i.ibb.co/16fD5nV/Unknown-8.png
-// https://i.ibb.co/pW7zfw0/Unknown-9.png
-// https://i.ibb.co/GT3W9vt/Unknown-10.png
-// https://i.ibb.co/fk6t76t/Unknown.png
 onMounted(() => {
   // animate slide in when visible
   $gsap.from("#cards", {
