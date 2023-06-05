@@ -49,8 +49,8 @@ let cards = ref([
           InApp Screenshots
         </h2>
         <p class="text-gray-600">
-          Some of the screenshots of the app in action. This app is live and can
-          be used by anyone.
+          Some of the screenshots of the app in action. This app is currently in
+          alpha testing.
         </p>
       </div>
       <div

@@ -6,7 +6,7 @@
     <Cta />
     <Guide />
     <Cards />
-    <!-- <Comparison /> -->
+    <Appvideo />
     <Faq />
     <Footer />
   </section>
