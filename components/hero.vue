@@ -1,16 +1,9 @@
-<script setup lang="ts">
-const { $gsap } = useNuxtApp();
+<script setup lang="ts"> 
 import HouseLottie from "../assets/house.json";
-onMounted(() => {
-  // animate slide in
-  $gsap.from(".img", {
-    duration: 1,
-    opacity: 0,
-    x: 100,
-    ease: "power4.out",
-    stagger: 0.2,
-  });
-});
+const openNavbar = () => {
+  const nav = document.querySelector(".navmenu");
+  nav?.classList.toggle("hidden");
+}; 
 </script>
 <template>
   <header>
@@ -31,12 +24,13 @@ onMounted(() => {
         >
           <div class="w-full flex justify-between lg:w-auto">
             <a href="#" aria-label="logo" class="flex space-x-2 items-center">
-              <span class="text-base font-bold text-gray-600 dark:text-white"
-                >HostFaire</span
-              >
+              <span class="text-base font-bold text-gray-600 dark:text-white">
+                HostFaire
+              </span>
             </a>
             <label
               for="hbr"
+              @click="openNavbar"
               class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
             >
               <div
@@ -110,7 +104,7 @@ onMounted(() => {
         </p>
       </div>
       <div class="overflow-hidden w-full lg:w-7/12 lg:-mr-16">
-        <client-only>
+        <client-only >
           <Vue3Lottie :animationData="HouseLottie" :height="600" :width="600" />
         </client-only>
       </div>
