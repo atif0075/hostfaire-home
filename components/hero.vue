@@ -1,9 +1,9 @@
-<script setup lang="ts"> 
+<script setup lang="ts">
 import HouseLottie from "../assets/house.json";
 const openNavbar = () => {
   const nav = document.querySelector(".navmenu");
   nav?.classList.toggle("hidden");
-}; 
+};
 </script>
 <template>
   <header>
@@ -95,7 +95,8 @@ const openNavbar = () => {
           class="text-gray-900 font-bold text-4xl md:text-6xl lg:text-5xl xl:text-6xl dark:text-white"
         >
           Your home, <br />
-          everywhere you go
+          everywhere you <br class="hidden md:block" />
+          go
         </h1>
         <p class="mt-8 text-gray-600 dark:text-gray-300">
           Need a time out? Find a stay nearby and get some space. HostFaire is a
@@ -104,7 +105,7 @@ const openNavbar = () => {
         </p>
       </div>
       <div class="overflow-hidden w-full lg:w-7/12 lg:-mr-16">
-        <client-only >
+        <client-only>
           <Vue3Lottie :animationData="HouseLottie" :height="600" :width="600" />
         </client-only>
       </div>
