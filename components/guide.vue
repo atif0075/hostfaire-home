@@ -17,22 +17,22 @@ onMounted(() => {
 });
 let guide = ref([
   {
-    title: "Find your dream home",
+    title: "Create an Account",
     description:
-      "HostFaire empowers hotels and other properties by providing full stack technology that increases earnings and eases operations. Bringing affordable and trusted accommodation that guests can book instantly.",
-    image: "../assets/svg/house.svg",
+      "Click on 'Sign Up' and enter your email address, or sign up using your Google, Apple or Facebook account.",
+    image: "https://i.ibb.co/K0yjhy1/key.png",
   },
   {
-    title: "Find your dream home",
+    title: "Search & Book a Listing",
     description:
-      "HostFaire empowers hotels and other properties by providing full stack technology that increases earnings and eases operations. Bringing affordable and trusted accommodation that guests can book instantly.",
-    image: "../assets/svg/house.svg",
+      "Browse the available listings and use filters to narrow down your search.",
+    image: "https://i.ibb.co/2jnY1KM/search.png",
   },
   {
-    title: "Find your dream home",
+    title: "Payment & Communication",
     description:
-      "HostFaire empowers hotels and other properties by providing full stack technology that increases earnings and eases operations. Bringing affordable and trusted accommodation that guests can book instantly.",
-    image: "../assets/svg/house.svg",
+      "Enter your payment details securely or select a saved payment method.",
+    image: "https://i.ibb.co/ZMhb4gL/credit-card.png",
   },
 ]);
 </script>
@@ -57,11 +57,11 @@ let guide = ref([
         >
           <div class="space-y-12 text-center">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4341/4341069.png"
+              :src="item.image"
               class="w-16 mx-auto"
               width="512"
               height="512"
-              alt="burger illustration"
+              alt="guide"
             />
             <div class="space-y-6">
               <h3 class="text-2xl font-semibold text-gray-800 transition">

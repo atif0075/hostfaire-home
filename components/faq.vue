@@ -37,7 +37,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div id="faq" class="space-y-4 max-w-3xl mx-auto px-2 py-16">
+  <div id="faq" class="space-y-4 min-h-full max-w-3xl mx-auto px-2 py-16">
     <h2 class="text-2xl text-center font-bold text-zinc-800 md:text-4xl">
       Frequently asked questions
     </h2>

@@ -3,7 +3,7 @@ const { $gsap } = useNuxtApp();
 const { $ScrollTrigger } = useNuxtApp();
 onMounted(() => {
   // animate pop in when visible
-  $gsap.from("#explore", {
+  $gsap.from("#xx", {
     scrollTrigger: {
       trigger: "#cta",
       start: "top 60%",
@@ -67,6 +67,32 @@ onMounted(() => {
                     This feature allows for real-time communication with
                     customer service and support, making the booking process
                     smooth and hassle-free for travelers.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-8 flex gap-4 md:items-center">
+                <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-6 h-6 m-auto text-indigo-500"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M6.5 5A4.5 4.5 0 0 0 2 9.5V11h28V9.5A4.5 4.5 0 0 0 25.5 5h-19ZM2 22.5V13h28v9.5a4.5 4.5 0 0 1-4.5 4.5h-19A4.5 4.5 0 0 1 2 22.5ZM21 19a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2h-3Z"
+                    />
+                  </svg>
+                </div>
+                <div class="w-5/6">
+                  <h4 class="font-semibold text-lg text-gray-700">
+                    Payments with ease
+                  </h4>
+                  <p class="text-gray-500">
+                    HostFaire integrates with Stripe to securely process guest
+                    payments and facilitate payouts to hosts, offering various
+                    payment options and ensuring compliance with industry
+                    standards.
                   </p>
                 </div>
               </div>
